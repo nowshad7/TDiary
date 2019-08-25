@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#546E7A"
+    tools:context="com.example.nowsh.myapplication.EditTaskActivity">
+    <ImageView
+        android:id="@+id/img_content"
+        android:src="@drawable/ic_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/img_content"
+        android:background="@color/colorPrimary"
+        android:text="Edit Task"
+        android:paddingTop="13dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:text="Counter"/>
+    <EditText
+        android:id="@+id/Counter_ID"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/count"
+        android:layout_below="@id/textView"
+        android:inputType="number"
+        android:textColor="@android:color/white"/>
+
+
+    <TextView
+        android:id="@+id/EnterTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Task"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/count" />
+
+
+    <EditText
+        android:id="@+id/InputTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/EnterTask" />
+    <TextView
+        android:id="@+id/EnterDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Due Date"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/InputTask" />
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:src="@drawable/ic_date"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EnterDate"/>
+
+
+    <EditText
+        android:id="@+id/InputDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/EnterDate"
+        android:layout_toRightOf="@id/calendar"
+        android:inputType="date" />
+    <TextView
+        android:id="@+id/EnterTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Time"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/InputDate" />
+    <EditText
+        android:id="@+id/InputTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/EnterTime"
+        android:inputType="time" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#4CAF50"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_save"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

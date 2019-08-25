@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.nowsh.myapplication.MainActivity">
+    <ImageView
+        android:id="@+id/img_content"
+        android:src="@drawable/ic_list"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/img_content"
+        android:background="@color/colorPrimary"
+        android:text="Task List"
+        android:paddingTop="13dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+
+
+         />
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rView"
+    android:layout_below="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+<android.support.design.widget.BottomNavigationView
+    android:id="@+id/bottom_nev"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:itemBackground="@color/colorPrimary"
+    app:itemIconTint="@drawable/nav_item_color_state"
+    app:itemTextColor="@drawable/nav_item_color_state"
+    app:menu="@menu/bottom_nev_main"/>
+
+</RelativeLayout>
